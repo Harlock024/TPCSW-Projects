@@ -11,4 +11,13 @@
         <maven.compiler.target>11</maven.compiler.target>
         <exec.mainClass>org.uv.tpcsw.practica.TPCSWPractica01</exec.mainClass>
     </properties>
+    
+    <dependencies>
+            <!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.7.4</version>
+        </dependency>
+    </dependencies>
 </project>
