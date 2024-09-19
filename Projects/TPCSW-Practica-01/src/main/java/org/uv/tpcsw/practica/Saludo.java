@@ -4,6 +4,9 @@
  */
 package org.uv.tpcsw.practica;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author harlock024
@@ -13,7 +16,7 @@ public class Saludo extends Mensaje{
 
     @Override
     public void msg() {
-        System.out.println("Hola mundo ...");
+         Logger.getLogger(Despedida.class.getName()).log(Level.INFO, "hola mundo..." );
     }
     
 }

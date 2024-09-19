@@ -4,6 +4,9 @@
  */
 package org.uv.tpcsw.practica;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author harlock024
@@ -12,9 +15,7 @@ public class Despedida2  implements  IMensaje{
 
     @Override
     public void imprimir() {
-        System.out.println("adios mundo 2");
+        Logger.getLogger(Despedida.class.getName()).log(Level.INFO, "ADIOS MUNDO 2...");
     }
-    
-    
-    
+     
 }

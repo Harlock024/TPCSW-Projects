@@ -11,19 +11,30 @@ public class DAOEmpleado {
     
 
     public boolean guardar(EmpleadoPojo pojo) {
-        return true;
+           ConexionDB con = ConexionDB.getInstace();
+        String sql = "INSERT INTO empleados (clave, nombre,direccion, telefono)"
+                + "('"+pojo.getClave() +"','" + pojo.getNombre() +"','" +
+                pojo.getDireccion() +"','" + pojo.getTelefono() + "')";
+        return con.execute(sql);
+     
     }
 
     public boolean eliminar(EmpleadoPojo pojo) {
+        
         return true;
     }
 
     public boolean modificar(EmpleadoPojo pojo) {
-        return true;
+         ConexionDB con = ConexionDB.getInstace();
+        String sql = "UPDATE INTO empleados (clave, nombre,direccion, telefono)"
+                + "('"+pojo.getClave() +"','" + pojo.getNombre() +"','" +
+                pojo.getDireccion() +"','" + pojo.getTelefono() + "')";
+        return con.execute(sql);
     }
 
     public List<EmpleadoPojo> buscarAll(){
-        return null;
+          String sql="select";
+          return null;
     
 }
     

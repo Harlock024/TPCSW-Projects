@@ -1,5 +1,8 @@
 package org.uv.tpcsw.practica;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author harlock024
@@ -20,7 +23,7 @@ public class Singleton {
     }
 
     public void imprimir() {
-        System.out.println("Mensaje ...");
+          Logger.getLogger(Despedida.class.getName()).log(Level.INFO, "mensaje..");
     }
 
 }
